@@ -61,10 +61,8 @@ gem 'cancan'
 
 
 gem 'carrierwave'
-gem 'rmagick'
+# gem 'rmagick'
 
 gem 'kaminari'
 
-
 gem 'slim-rails'
-
