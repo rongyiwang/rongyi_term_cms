@@ -1,0 +1,9 @@
+延安路:
+  id: 1
+  city_id: 1
+张江镇:
+  id: 2
+  city_id: 1
+乡宁县:
+  id: 3
+  city_id: 2

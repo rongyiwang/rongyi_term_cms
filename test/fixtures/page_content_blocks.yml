@@ -1,0 +1,6 @@
+page_content_block1:
+  id: 1
+  name: $LABEL
+page_content_block2:
+  id: 2
+  name: $LABEL

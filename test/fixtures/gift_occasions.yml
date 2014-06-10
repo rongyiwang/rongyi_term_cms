@@ -1,0 +1,6 @@
+gift_occasion1:
+  id: 1
+  name: $LABEL
+gift_occasion2:
+  id: 2
+  name: $LABEL

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title CMS
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'ckeditor/init'
+    = csrf_meta_tags
+  body
+    = render 'layouts/notice'
+    #header
+      .top-bar
+        = render 'layouts/user_bar'
+        | 终端机 后台管理
+      = render 'layouts/nav'
+      = render 'layouts/tools_bar'
+    #nav-move-more.js-mouseover
+      span.more 菜单
+      .nav-list.shadow.js-nav-list
+        = link_to '后台首页', root_path
+
+    #main
+      == yield
+    #dialog
+    = render 'layouts/footer_js'

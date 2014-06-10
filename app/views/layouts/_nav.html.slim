@@ -1,0 +1,14 @@
+#nav
+  dl
+    dt
+      = link_to '后台首页', root_path
+  - if current_admin.roles == 'admin' 
+    dl
+      dt
+        = link_to '管理员', admins_path
+
+.v-gap
+#nav-path
+  = link_to '首页', root_path
+  span &gt;
+  == yield :nav_path

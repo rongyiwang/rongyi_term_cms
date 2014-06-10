@@ -1,0 +1,12 @@
+item0:
+  email: basic@rongyi.com
+  password: 12345678
+  roles: basic
+item1:
+  email: admin@rongyi.com
+  password: 12345678
+  roles: admin
+item2:
+  email: manager@rongyi.com
+  password: 12345678
+  roles: manager

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RongyiTermCms::Application.config.secret_key_base = 'ba7405ce8ee381ead444c8a966075b2aea25823b979a5ebb2f98ab99d5de736ac68577f4b8942f0a0b28cfbf74a4e25d237f587c0ca461544da2ae9bb5b8b94f'
+RongyiTermCms::Application.config.secret_key_base = '8ed4bd733acd820a5e682f1e16331a2ee752b997d8fe1edffb0cf57c3d91532e0e9b0c6c61144cd2fb4add566274efcb4d49fd2ed807e4fd2e971ad56944f567'

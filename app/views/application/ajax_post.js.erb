@@ -1,0 +1,1 @@
+$('#<%= dom_id(model) %>').replaceWith('<%=j render "#{model.class.name.tableize}/#{controller_name.singularize}", :"#{controller_name.singularize}" => model %>')

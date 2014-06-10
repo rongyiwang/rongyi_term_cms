@@ -1,0 +1,11 @@
+gift_child_catalog1:
+  id: 1
+  name: $LABEL
+  gift_catalog_id: 1
+gift_child_catalog2:
+  id: 2
+  name: $LABEL
+  gift_catalog_id: 1
+gift_chilid_catalog2:
+  id: 3
+  gift_catalog_id: 2

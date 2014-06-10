@@ -33,4 +33,9 @@ RongyiTermCms::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+end
+
+Kaminari.configure do |config|
+  config.default_per_page = 2
 end

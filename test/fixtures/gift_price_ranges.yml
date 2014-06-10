@@ -1,0 +1,6 @@
+gift_price_range1:
+  id: 1
+  display_name: $LABEL
+gift_price_range2:
+  id: 2
+  display_name: $LABEL

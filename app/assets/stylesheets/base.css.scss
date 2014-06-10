@@ -1,0 +1,27 @@
+.v-gap { height: 10px; overflow: hidden; }
+.v-gap-20 { height: 20px; overflow: hidden; }
+a.img-box-60 {
+  display: inline-block; width: 60px; height: 60px; overflow: hidden;
+  img { width: 60px; }
+}
+
+.shadow {
+  box-shadow: 1px 1px 2px #ddd;
+  -webkit-box-shadow: 1px 1px 2px #ddd;
+  -moz-box-shadow: 1px 1px 2px #ddd;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.on-shelves-yes { color: green; }
+.on-shelves-no { color: gray; }
+.hidden-yes { color: gray; }
+.hidden-no { color: green; }
+.locked-yes { color: gray; }
+.locked-no { color: green; }
+.recommended-yes { color: green; }
+.recommended-no { color: gray; }
+.sold-yes { color: green; }
+.sold-no { color: red; }
