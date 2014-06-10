@@ -25,6 +25,13 @@ module RongyiTermCms
     config.assets.enabled = true
     config.assets.precompile += Ckeditor.assets
     config.assets.precompile += %w(ckeditor/*)
+    config.to_prepare do
+      Devise::SessionsController.layout "application_devise"
+      Devise::RegistrationsController.layout "application_devise"
+      Devise::ConfirmationsController.layout "application_devise"
+      Devise::UnlocksController.layout "application_devise"            
+      Devise::PasswordsController.layout "application_devise"        
+    end
     config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
     config.action_mailer.raise_delivery_errors = true     #注意，在development.rb下需修改成true
     config.action_mailer.delivery_method = :smtp

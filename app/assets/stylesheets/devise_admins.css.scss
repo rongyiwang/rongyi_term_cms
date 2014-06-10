@@ -1,38 +1,38 @@
 body.page-is-sign-in {
-  padding: 0; background: #66CCCC;
-  h1 {
-    color: #fff; text-align: center;
-  }
-  form {
-    margin: 0 auto; padding: 50px; width: 280px; background: #f7f7f7; border-radius: 5px;
-    .input-text {
-      display: block; width: 258px; padding: 10px;
+    padding: 0; background: #66CCCC;
+    h1 {
+        color: #fff; text-align: center;
     }
-    .btn-submit {
-      display: block; border: none; width: 280px; padding: 10px; background: #FF9999; color: #fff; border-radius: 5px;
-      &:hover {
-        background: #f60;
-      }
+    form {
+        margin: 0 auto; padding: 50px; width: 280px; background: #f7f7f7; border-radius: 5px;
+        .input-text {
+            display: block; width: 258px; padding: 10px;
+        }
+        .btn-submit {
+            display: block; border: none; width: 280px; padding: 10px; background: #FF9999; color: #fff; border-radius: 5px;
+            &:hover {
+                background: #f60;
+            }
+        }
+        .remember {
+            .input-check {
+                height: 30px;
+                input {
+                    float: left;
+                }
+                span {
+                    float: left; margin: 0 0 0 5px; font-size: 12px; color: #666;
+                }
+                a {
+                    float: left; margin: 0 0 0 30px; font-size: 12px; color: #666;
+                    &:hover {
+                        background: #ccc;
+                    }
+                }
+            }
+            .tooltip {
+                font-size: 12px; color: #ccc;
+            }
+        }
     }
-    .remember {
-      .input-check {
-        height: 30px;
-        input {
-          float: left;
-        }
-        span {
-          float: left; margin: 0 0 0 5px; font-size: 12px; color: #666;
-        }
-        a {
-          float: left; margin: 0 0 0 30px; font-size: 12px; color: #666;
-          &:hover {
-              background: #ccc;
-      }
-        }
-      }
-      .tooltip {
-        font-size: 12px; color: #ccc;
-      }
-    }
-  }
 }

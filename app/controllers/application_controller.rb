@@ -7,7 +7,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :authenticate_admin!
 
-  layout :layout
 
   protected
   def configure_permitted_parameters
@@ -20,15 +19,6 @@ class ApplicationController < ActionController::Base
   end
 
   private
-  def layout
-    if is_a?(Devise::SessionsController) && action_name == 'new'
-      'application_devise'
-      elsif is_a?(Devise::RegistrationsController) && action_name == 'new'
-      'application_devise'
-      elsif is_a?(Devise::PasswordsController) && action_name == 'new'
-      'application_devise'
-    end
-  end
 
   def authorize_destroy
     authorize! :destroy, self.class
