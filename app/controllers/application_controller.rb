@@ -23,7 +23,9 @@ class ApplicationController < ActionController::Base
   def layout
     if is_a?(Devise::SessionsController) && action_name == 'new'
       'application_devise'
-    elsif is_a?(Devise::RegistrationsController) && action_name == 'new'
+      elsif is_a?(Devise::RegistrationsController) && action_name == 'new'
+      'application_devise'
+      elsif is_a?(Devise::PasswordsController) && action_name == 'new'
       'application_devise'
     end
   end

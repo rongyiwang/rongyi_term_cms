@@ -25,5 +25,16 @@ module RongyiTermCms
     config.assets.enabled = true
     config.assets.precompile += Ckeditor.assets
     config.assets.precompile += %w(ckeditor/*)
+    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+    config.action_mailer.raise_delivery_errors = true     #注意，在development.rb下需修改成true
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address: "smtp.sina.com",  #smtp.qq.com
+      port:  25,
+      domain: "sina.com",   #qq.com
+      authentication: :login,
+      user_name: "xxxxxxx@sina.com", #修改邮箱
+      password: "xxxxxxxx" #修改正确的密码
+    }   
   end
 end
