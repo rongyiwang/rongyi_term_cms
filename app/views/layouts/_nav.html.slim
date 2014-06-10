@@ -2,7 +2,7 @@
   dl
     dt
       = link_to '后台首页', root_path
-  - if current_admin.roles == 'admin' 
+  - if can? :admin ,nil 
     dl
       dt
         = link_to '管理员', admins_path
