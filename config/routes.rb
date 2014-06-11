@@ -1,5 +1,7 @@
 RongyiTermCms::Application.routes.draw do
 
+  resources :projects
+
   root 'home#index'
 
   devise_for :admins, path: 'auth'

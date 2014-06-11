@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140605091919) do
+ActiveRecord::Schema.define(version: 20140611082327) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -32,5 +32,16 @@ ActiveRecord::Schema.define(version: 20140605091919) do
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
+
+  create_table "projects", force: true do |t|
+    t.string   "mall_code"
+    t.string   "name"
+    t.string   "region"
+    t.string   "city"
+    t.string   "type"
+    t.string   "manager"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
