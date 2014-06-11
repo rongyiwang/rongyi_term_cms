@@ -1,0 +1,12 @@
+<div class="v-gap"></div>
+<div id="tools-bar">
+    <a href="javascript:window.history.back();" >后退</a>
+    <a href="javascript:window.location.href=window.location.href;"> 刷新</a>
+    <%= yield :tools_bar %>
+    <div id="search-bar">
+        <%= yield :search_bar %>
+    </div>
+    <span class="right">
+        <%= yield :top_paginate %>
+    </span>
+</div>

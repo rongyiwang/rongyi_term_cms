@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> CMS</title>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <%= render 'layouts/notice' %>
+        <div id="header">
+            <div class="top-bar">
+                <%= render 'layouts/user_bar' %>
+                终端机 后台管理
+            </div>
+            <%= render 'layouts/nav' %>
+            <%= render 'layouts/tools_bar' %>
+        </div>
+        <div id="nav-move-more" class=" js-mouseover">
+            <span class="more">菜单</span>
+            <div class="nav-list shadow js-nav-list">
+                <%= link_to '后台首页', root_path %>
+            </div>
+        </div>
+        <div id="main">
+            <%= yield %>
+        </div>
+        <div id="dialog"></div>
+    </body>
+</html>
+
+<%= render 'layouts/footer_js' %>

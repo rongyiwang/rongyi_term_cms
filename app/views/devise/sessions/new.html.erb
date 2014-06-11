@@ -1,0 +1,28 @@
+<% @page_is = 'page-is-sign-in' %>
+
+<div class="v-gap"></div>
+<div class="v-gap"></div>
+<div class="v-gap"></div>
+
+<h1> 管理系统</h1>
+
+<div class="v-gap"></div>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= f.email_field :email, autofocus: true, placeholder: '帐号', class: 'input-text' %>
+    <%= f.password_field :password, placeholder: '密码', class: 'input-text' %>
+    <div class="v-gap"></div>
+    <%= f.submit "登 录", class: 'btn-submit' %>
+    <% if devise_mapping.rememberable? %>
+        <div class="v-gap"></div>
+        <label class="remember">
+            <div class="input-check">
+                <%= f.check_box :remember_me %>
+                <span> 保持登录状态</span>
+                <%= link_to '注册', new_admin_registration_path %>
+                <%= link_to "忘记密码", new_password_path(resource_name) %>
+            </div>
+            <div class="tooltip"> 为了安全起见，请仅在您经常使用的设备上选中此复选框。</div>
+        </label>
+    <% end %>
+<% end %>

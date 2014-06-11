@@ -1,0 +1,21 @@
+<div id="nav">
+    <dl>
+        <dt>
+        <%= link_to '后台首页', root_path %>
+        </dt>
+    </dl>
+    <% if can? :admin ,nil  %>
+        <dl>
+            <dt>
+            <%= link_to '管理员', admins_path %>
+            </dt>
+        </dl>
+    <% end %>
+</div>
+
+<div class="v-gap"></div>
+<div id="nav-path">
+    <%= link_to '首页', root_path %>
+    <span> &nbsp;</span>
+    <%= yield :nav_path %>
+</div>

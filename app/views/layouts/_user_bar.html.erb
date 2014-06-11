@@ -1,0 +1,9 @@
+<div id="user-bar">
+    <% if admin_signed_in? %>
+        <b> <%= current_admin.email %> </b>
+        <%= link_to '退出', destroy_admin_session_path, method: :delete %>
+    <% else %>
+        <%= link_to '请登录', new_admin_session_path %>
+        <%= link_to '免费注册', new_admin_registration_path %>
+    <% end %>
+</div>

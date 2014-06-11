@@ -1,0 +1,14 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> CMS </title>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body class="<%= @page_is %>">
+        <%= render 'layouts/notice' %>
+        <%= yield %>
+    </body>    
+</html>
+    <%= render 'layouts/footer_js' %>
